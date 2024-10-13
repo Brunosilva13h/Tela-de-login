@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Login</title>
+
+</head>
+<body>
+  
+<style>
+
+.toggle-password{
+cursor: pointer;
+
+}
+
+</style>
+
+  <form action="">
+
+  <h1> Login </h1>
+
+  <label for="usuario">Usuário</label>
+  <input type="usuario" placeholder="Usuário" "usuário">
+
+  <label for="password">Senha</label>
+  <input type="password" placeholder="Senhar" id="password" name="senha">
+  <span class="toggle-password" onclick="togglepassword"()></span>
+
+  <button>Entrar</button>
+
+</form>
+
+<script>
+
+function togglepassword() {
+
+const senhaInput = document.getElementById('senha');
+const type = senhaInput.getAttribute('type') === 'password' ? 'text' : 'password';
+senhaInput.setAttribute('type', type);
+
+}
+
+</script>
+
+</body>
+</html>
